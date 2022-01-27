@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+
+  {% if t=='n' %}
+  <div class="shadow p-3 mb-5 bg-white rounded">
+    <h1 style="color:rgb(0, 102, 255)">Stock Headlines will result in "Negative" Sentiments.</h1>
+  </div>
+
+  {% else %}
+  <div class="shadow p-3 mb-5 bg-white rounded">
+    <h1 style="color:rgb(0, 102, 255)">Stock Headlines will result in "Positive" Sentiments.</h1>
+  </div>
+
+
+  {% endif %}
+
+{% endblock %}

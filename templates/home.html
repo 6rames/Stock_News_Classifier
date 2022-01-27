@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="shadow p-3 mb-5 bg-white rounded">
+  <h1 style="color:rgb(0, 102, 255)">Stock News Sentiment Prediction</h1>
+  <h3 style="color:rgb(0, 102, 255)">Enter the Headlines for predictions.</h3>
+</div>
+
+  <form action="{{url_for('predict')}}">
+    <input type="text" name="headlines" class="form-control" placeholder="Headlines here">
+    <br>
+    <input type="submit" class="btn btn-info" value="Enter">
+  </form>
+{% endblock %}
